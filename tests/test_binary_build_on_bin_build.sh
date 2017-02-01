@@ -13,7 +13,7 @@ docker run -d \
     -e BUNDLE_URL=https://s3.amazonaws.com/zeema-data/aa.tar.gz \
     -e REBUILD_NPM_MODULES=1 \
     -p 9090:80 \
-    meteorhacks/meteord:binbuild
+    msquare/meteord:binbuild
 
 echo "Waiting for binary building is happening"
 sleep 20

@@ -13,7 +13,7 @@ docker run -d \
     -e BUNDLE_URL=https://s3.amazonaws.com/zeema-data/aa.tar.gz \
     -e REBUILD_NPM_MODULES=1 \
     -p 9090:80 \
-    meteorhacks/meteord:base
+    msquare/meteord:base
 
 echo "Waiting for binary building is happening"
 sleep 10
@@ -21,7 +21,7 @@ sleep 10
 appContent=`docker logs binary_build`
 clean
 
-if [[ $appContent != *"meteorhacks/meteord:bin-build"* ]]; then
+if [[ $appContent != *"msquare/meteord:bin-build"* ]]; then
   echo "Failed: Trying to binary building on the base image"
   exit 1
 fi

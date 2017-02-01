@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 0.10.35
+    version: 6.9.2
   services:
     - docker
 

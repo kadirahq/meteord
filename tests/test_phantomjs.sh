@@ -8,7 +8,7 @@ clean
 docker run  \
     --name phantomjs_check \
     --entrypoint="/bin/bash" \
-    meteorhacks/meteord:base -c 'phantomjs -h'
+    msquare/meteord:base -c 'phantomjs -h'
 
 sleep 5
 

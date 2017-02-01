@@ -1,5 +1,5 @@
-FROM meteorhacks/meteord:base
-MAINTAINER MeteorHacks Pvt Ltd.
+FROM msquare/meteord:base
+MAINTAINER M-SQUARE Pty Ltd.
 
 ONBUILD RUN bash $METEORD_DIR/lib/install_meteor.sh
 ONBUILD COPY ./ /app
